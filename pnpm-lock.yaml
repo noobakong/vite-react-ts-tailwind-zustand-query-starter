@@ -28,6 +28,9 @@ devDependencies:
   eslint:
     specifier: ^8.45.0
     version: registry.npmmirror.com/eslint@8.47.0
+  eslint-plugin-react-refresh:
+    specifier: ^0.4.3
+    version: registry.npmmirror.com/eslint-plugin-react-refresh@0.4.3(eslint@8.47.0)
   less:
     specifier: ^4.2.0
     version: registry.npmmirror.com/less@4.2.0
@@ -2175,6 +2178,17 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
+    dependencies:
+      eslint: registry.npmmirror.com/eslint@8.47.0
+    dev: true
+
+  registry.npmmirror.com/eslint-plugin-react-refresh@0.4.3(eslint@8.47.0):
+    resolution: {integrity: sha512-Hh0wv8bUNY877+sI0BlCUlsS0TYYQqvzEwJsJJPM2WF4RnTStSnSR3zdJYa2nPOJgg3UghXi54lVyMSmpCalzA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.3.tgz}
+    id: registry.npmmirror.com/eslint-plugin-react-refresh/0.4.3
+    name: eslint-plugin-react-refresh
+    version: 0.4.3
+    peerDependencies:
+      eslint: '>=7'
     dependencies:
       eslint: registry.npmmirror.com/eslint@8.47.0
     dev: true
