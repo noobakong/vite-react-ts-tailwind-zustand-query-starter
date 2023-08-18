@@ -1,0 +1,3 @@
+#  ensure that text files that any contributor introduces to the repository have their line endings normalized
+# more see: https://www.git-scm.com/docs/gitattributes#_end_of_line_conversion
+* text=auto
