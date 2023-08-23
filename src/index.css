@@ -26,3 +26,11 @@ if you conflict with <h> no style, you can see https://tailwindcss.com/docs/pref
     @apply text-base;
   }
 }
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
