@@ -26,7 +26,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
