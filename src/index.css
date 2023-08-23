@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+/*
+if you conflict with <h> no style, you can see https://tailwindcss.com/docs/preflight#headings-are-unstyled
+*/
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  h4 {
+    @apply text-base;
+  }
+
+  h5 {
+    @apply text-base;
+  }
 }
