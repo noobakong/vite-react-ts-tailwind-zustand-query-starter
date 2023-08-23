@@ -11,7 +11,8 @@
     "build": "tsc && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -21,6 +22,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config-react": "^0.40.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
@@ -31,12 +34,24 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "less": "^4.2.0",
+    "lint-staged": "^14.0.1",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.5.3",
+    "simple-git-hooks": "^2.9.0",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-pages": "^0.31.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx commitlint --edit"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --fix",
+      "prettier --ignore-unknown --write"
+    ]
   }
 }
