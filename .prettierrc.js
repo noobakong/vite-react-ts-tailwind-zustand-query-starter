@@ -1,3 +1,5 @@
+/** @type {import('prettier').RequiredOptions} */
+
 export default {
   trailingComma: 'all',
   tabWidth: 2,
@@ -9,7 +11,7 @@ export default {
   bracketSpacing: true,
   arrowParens: 'avoid',
   jsxBracketSameLine: false,
-  endOfLine: 'lf',
+  endOfLine: 'auto',
   overrides: [
     {
       files: '.prettierrc',
