@@ -18,7 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.15.0",
-    "react-router-dom": "^6.15.0"
+    "react-router-dom": "^6.15.0",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@antfu/eslint-config-react": "^0.40.2",
