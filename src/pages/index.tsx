@@ -1,7 +1,9 @@
+import { useGithubUserInfoQuery } from '@/query'
 import { useBearStore } from '@/store'
 
 function Home() {
   const { bears, increase } = useBearStore()
+  const { isFetching, data } = useGithubUserInfoQuery('noobakong')
   return (
     <main className=" bg-red-100 text-center">
       <h1>this is home</h1>
@@ -14,6 +16,18 @@ function Home() {
         <span>{bears}</span>
       </div>
       <br />
+
+      <div>
+        <h2>react-query demo</h2>
+        {isFetching ? (
+          <p>loading...</p>
+        ) : (
+          <>
+            <div>{data?.login}</div>
+            <img src={data?.avatar_url} alt="" className="mx-auto w-32  rounded-full" />
+          </>
+        )}
+      </div>
     </main>
   )
 }

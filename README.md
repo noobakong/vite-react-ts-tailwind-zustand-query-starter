@@ -9,3 +9,5 @@
 - Path Aliasing
   - @/ is aliased to ./src/ folder.
 - zustand
+- ky
+- react-query

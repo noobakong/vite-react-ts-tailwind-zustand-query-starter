@@ -15,6 +15,8 @@
     "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.33.0",
+    "ky": "^0.33.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.15.0",
