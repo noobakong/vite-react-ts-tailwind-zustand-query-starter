@@ -7,7 +7,7 @@
     "pnpm": "^8.0.0"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "tsc && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
