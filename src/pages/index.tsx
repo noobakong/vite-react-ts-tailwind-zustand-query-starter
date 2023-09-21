@@ -1,10 +1,13 @@
 import { Outlet, useNavigate } from 'react-router'
 import { useGithubUserInfoQuery } from '@/query'
-import { useBearStore } from '@/store'
+
 import ReactLogo from '@/assets/react.svg?react'
+import { useBearStore } from '@/store/bear'
+import { useFishStore } from '@/store/fish'
 
 function Home() {
   const { bears, increase } = useBearStore()
+  const { fish, increase: increaseFish } = useFishStore()
   const { isFetching, data } = useGithubUserInfoQuery('noobakong')
   const navigate = useNavigate()
   return (
@@ -17,10 +20,18 @@ function Home() {
       <br />
       <div>
         <h2>zustand demo</h2>
-        <button className="mr-3 bg-blue-500" onClick={() => increase(1)}>
-          click me to increase:
-        </button>
-        <span>{bears}</span>
+        <div>
+          <button className="mr-3 border border-black" onClick={() => increase(1)}>
+            click me to increase bear:
+          </button>
+          <span>bear: {bears}</span>
+        </div>
+        <div>
+          <button className="mr-3 border border-black" onClick={() => increaseFish(1)}>
+            click me to increase fish:
+          </button>
+          <span>fish: {fish}</span>
+        </div>
       </div>
       <br />
 

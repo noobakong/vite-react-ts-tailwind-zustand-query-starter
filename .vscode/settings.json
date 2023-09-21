@@ -13,5 +13,5 @@
   },
   // Unknown At Rules ingore to fix Unknown at rule @tailwindcss(unknownAtRules)
   "css.lint.unknownAtRules": "ignore",
-  "cSpell.words": ["classname", "commitlint", "svgr", "tailwindcss", "tanstack", "zustand"]
+  "cSpell.words": ["classname", "commitlint", "immer", "svgr", "tailwindcss", "tanstack", "zustand"]
 }

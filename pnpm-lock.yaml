@@ -8,6 +8,9 @@ dependencies:
   '@tanstack/react-query':
     specifier: ^4.33.0
     version: registry.npmmirror.com/@tanstack/react-query@4.33.0(react-dom@18.2.0)(react@18.2.0)
+  immer:
+    specifier: ^10.0.2
+    version: registry.npmmirror.com/immer@10.0.2
   ky:
     specifier: ^0.33.3
     version: registry.npmmirror.com/ky@0.33.3
@@ -25,7 +28,7 @@ dependencies:
     version: registry.npmmirror.com/react-router-dom@6.15.0(react-dom@18.2.0)(react@18.2.0)
   zustand:
     specifier: ^4.4.1
-    version: registry.npmmirror.com/zustand@4.4.1(@types/react@18.2.20)(react@18.2.0)
+    version: registry.npmmirror.com/zustand@4.4.1(@types/react@18.2.20)(immer@10.0.2)(react@18.2.0)
 
 devDependencies:
   '@antfu/eslint-config-react':
@@ -4075,6 +4078,12 @@ packages:
     dev: true
     optional: true
 
+  registry.npmmirror.com/immer@10.0.2:
+    resolution: {integrity: sha512-Rx3CqeqQ19sxUtYV9CU911Vhy8/721wRFnJv3REVGWUmoAcIwzifTsdmJte/MV+0/XpM35LZdQMBGkRIoLPwQA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immer/-/immer-10.0.2.tgz}
+    name: immer
+    version: 10.0.2
+    dev: false
+
   registry.npmmirror.com/import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/import-fresh/-/import-fresh-3.3.0.tgz}
     name: import-fresh
@@ -7022,7 +7031,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  registry.npmmirror.com/zustand@4.4.1(@types/react@18.2.20)(react@18.2.0):
+  registry.npmmirror.com/zustand@4.4.1(@types/react@18.2.20)(immer@10.0.2)(react@18.2.0):
     resolution: {integrity: sha512-QCPfstAS4EBiTQzlaGP1gmorkh/UL1Leaj2tdj+zZCZ/9bm0WS7sI2wnfD5lpOszFqWJ1DcPnGoY8RDL61uokw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/zustand/-/zustand-4.4.1.tgz}
     id: registry.npmmirror.com/zustand/4.4.1
     name: zustand
@@ -7041,6 +7050,7 @@ packages:
         optional: true
     dependencies:
       '@types/react': registry.npmmirror.com/@types/react@18.2.20
+      immer: registry.npmmirror.com/immer@10.0.2
       react: registry.npmmirror.com/react@18.2.0
       use-sync-external-store: registry.npmmirror.com/use-sync-external-store@1.2.0(react@18.2.0)
     dev: false
