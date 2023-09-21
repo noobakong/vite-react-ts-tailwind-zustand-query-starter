@@ -1,7 +1,7 @@
 {
   "name": "vite-react-ts-tailwind-zustand-query-starter",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "engines": {
     "pnpm": "^8.0.0"
