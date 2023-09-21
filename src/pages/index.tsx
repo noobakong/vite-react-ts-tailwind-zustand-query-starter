@@ -5,8 +5,11 @@ function Home() {
   const { bears, increase } = useBearStore()
   const { isFetching, data } = useGithubUserInfoQuery('noobakong')
   return (
-    <main className=" bg-red-100 text-center">
-      <h1>this is home</h1>
+    <main className="bg-red-100 text-center">
+      <h1>
+        this is home
+        <span className="icon-[carbon--bot] ml-3"></span>
+      </h1>
       <br />
       <div>
         <h2>zustand demo</h2>
