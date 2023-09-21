@@ -7,6 +7,10 @@
     "source.fixAll.eslint": true,
     "source.organizeImports": false
   },
+  // To better format svg
+  "files.associations": {
+    "*.svg": "html"
+  },
   // Unknown At Rules ingore to fix Unknown at rule @tailwindcss(unknownAtRules)
   "css.lint.unknownAtRules": "ignore",
   "cSpell.words": ["classname", "commitlint", "tailwindcss", "tanstack", "zustand"]
