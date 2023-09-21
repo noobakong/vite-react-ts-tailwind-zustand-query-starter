@@ -1,5 +1,6 @@
 import { useGithubUserInfoQuery } from '@/query'
 import { useBearStore } from '@/store'
+import ReactLogo from '@/assets/react.svg?react'
 
 function Home() {
   const { bears, increase } = useBearStore()
@@ -10,6 +11,7 @@ function Home() {
         this is home
         <span className="icon-[carbon--bot] ml-3"></span>
       </h1>
+      <ReactLogo className="m-auto" width={50} height={50}></ReactLogo>
       <br />
       <div>
         <h2>zustand demo</h2>

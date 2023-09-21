@@ -11,3 +11,6 @@
 - zustand
 - ky
 - react-query
+- icon
+  - iconify to add icon
+  - vite-plugin-svgr to import svg as react component
