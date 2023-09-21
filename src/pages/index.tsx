@@ -1,3 +1,4 @@
+import { Outlet, useNavigate } from 'react-router'
 import { useGithubUserInfoQuery } from '@/query'
 import { useBearStore } from '@/store'
 import ReactLogo from '@/assets/react.svg?react'
@@ -5,6 +6,7 @@ import ReactLogo from '@/assets/react.svg?react'
 function Home() {
   const { bears, increase } = useBearStore()
   const { isFetching, data } = useGithubUserInfoQuery('noobakong')
+  const navigate = useNavigate()
   return (
     <main className="bg-red-100 text-center">
       <h1>
@@ -33,6 +35,24 @@ function Home() {
           </>
         )}
       </div>
+      <button
+        className="border border-black"
+        onClick={() => {
+          navigate('child1')
+        }}
+      >
+        go to child router 1
+      </button>
+      <div className="inline-block w-4"></div>
+      <button
+        className="border border-black"
+        onClick={() => {
+          navigate('child2')
+        }}
+      >
+        go to child router 2
+      </button>
+      <Outlet></Outlet>
     </main>
   )
 }

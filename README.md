@@ -5,6 +5,8 @@
 - prettier
 - tailwindcss
 - File based routing
+  - nested routing
+    - more see https://github.com/hannoeru/vite-plugin-pages#nested-routes
 - git-hooks to lint and commit-message check
 - Path Aliasing
   - @/ is aliased to ./src/ folder.
