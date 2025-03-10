@@ -1,4 +1,4 @@
-## temp
+## some information
 
 - vite
 - eslint
