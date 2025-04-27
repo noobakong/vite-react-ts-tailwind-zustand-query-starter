@@ -1,9 +1,8 @@
 ## some information
 
 - vite
-- eslint
-- prettier
-- tailwindcss
+- eslint use https://github.com/antfu/eslint-config
+- tailwindcss3
 - File based routing
   - nested routing
     - more see https://github.com/hannoeru/vite-plugin-pages#nested-routes
@@ -11,6 +10,7 @@
 - Path Aliasing
   - @/ is aliased to ./src/ folder.
 - zustand
+
   - global state management
   - code is in @/store
   - use middlewares devtool to see state changes on redux devtool
