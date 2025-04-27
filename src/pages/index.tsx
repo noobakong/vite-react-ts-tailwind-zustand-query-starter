@@ -1,9 +1,9 @@
-import { Outlet, useNavigate } from 'react-router'
+import ReactLogo from '@/assets/react.svg?react'
 import { useGithubUserInfoQuery } from '@/query'
 
-import ReactLogo from '@/assets/react.svg?react'
 import { useBearStore } from '@/store/bear'
 import { useFishStore } from '@/store/fish'
+import { Outlet, useNavigate } from 'react-router'
 
 function Home() {
   const { bears, increase } = useBearStore()
@@ -24,27 +24,35 @@ function Home() {
           <button className="mr-3 border border-black" onClick={() => increase(1)}>
             click me to increase bear:
           </button>
-          <span>bear: {bears}</span>
+          <span>
+            bear:
+            {bears}
+          </span>
         </div>
         <div>
           <button className="mr-3 border border-black" onClick={() => increaseFish(1)}>
             click me to increase fish:
           </button>
-          <span>fish: {fish}</span>
+          <span>
+            fish:
+            {fish}
+          </span>
         </div>
       </div>
       <br />
 
       <div>
         <h2>react-query demo</h2>
-        {isFetching ? (
-          <p>loading...</p>
-        ) : (
-          <>
-            <div>{data?.login}</div>
-            <img src={data?.avatar_url} alt="" className="mx-auto w-32  rounded-full" />
-          </>
-        )}
+        {isFetching
+          ? (
+            <p>loading...</p>
+          )
+          : (
+            <>
+              <div>{data?.login}</div>
+              <img src={data?.avatar_url} alt="" className="mx-auto w-32  rounded-full" />
+            </>
+          )}
       </div>
       <button
         className="border border-black"

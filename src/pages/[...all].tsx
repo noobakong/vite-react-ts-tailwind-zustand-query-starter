@@ -5,7 +5,12 @@ function NotFoundPage() {
 
   return (
     <div>
-      <h1>404 - Page {params['*']} Not Found</h1>
+      <h1>
+        404 - Page
+        {params['*']}
+        {' '}
+        Not Found
+      </h1>
     </div>
   )
 }
