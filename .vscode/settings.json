@@ -1,7 +1,7 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "prettier.enable": true,
+  "prettier.enable": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -13,5 +13,13 @@
   },
   // Unknown At Rules ingore to fix Unknown at rule @tailwindcss(unknownAtRules)
   "css.lint.unknownAtRules": "ignore",
-  "cSpell.words": ["classname", "commitlint", "immer", "svgr", "tailwindcss", "tanstack", "zustand"]
+  "cSpell.words": [
+    "classname",
+    "commitlint",
+    "immer",
+    "svgr",
+    "tailwindcss",
+    "tanstack",
+    "zustand"
+  ]
 }
