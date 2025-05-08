@@ -1,4 +1,5 @@
 import ReactLogo from '@/assets/react.svg?react'
+import { Button } from '@/components/ui/button'
 import { useGithubUserInfoQuery } from '@/query'
 
 import { useBearStore } from '@/store/bear'
@@ -14,6 +15,7 @@ function Home() {
     <main className="bg-red-100 text-center">
       <h1>
         this is home
+        <Button>click me</Button>
         <span className="icon-[carbon--bot] ml-3"></span>
       </h1>
       <ReactLogo className="m-auto" width={50} height={50}></ReactLogo>
